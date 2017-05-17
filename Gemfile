@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "figaro"
 gem 'rails', '4.2.5.1'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0.6'
@@ -12,9 +13,20 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'pry'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'launchy'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
 end
 
+group :test do
+  gem 'vcr'
+  gem 'webmock'
+end
