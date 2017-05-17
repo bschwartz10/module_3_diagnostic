@@ -1,7 +1,7 @@
 <% @fuel_stations.each do |fuel_station| %>
-  <h4>Name: <%= fuel_station["station_name"] %></h4>
-  <h5>Address: <%= fuel_station["street_address"] %></h5>
-  <h5>Fuel Type: <%= fuel_station["fuel_type_code"] %></h5>
-  <h5>Distance: <%= fuel_station["distance"] %></h5>
-  <h5>Access Times: <%= fuel_station["access_days_time"] %></h5></br>
+  <h4>Name: <%= fuel_station.station_name %></h4>
+  <h5>Address: <%= fuel_station.street_address %></h5>
+  <h5>Fuel Type: <%= fuel_station.fuel_type_code %></h5>
+  <h5>Distance: <%= fuel_station.distance %></h5>
+  <h5>Access Times: <%= fuel_station.access_days_time %></h5></br>
 <% end %>
